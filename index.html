@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>STOPWATCH TIMER</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="content">
+        <h3>STOPWATCH</h3>
+      </div>
+      <div class="outer-wrapper">
+        <button class="btn stopwatch-btn">CLICK TO START</button>
+        <div class="stopwatch hidden">
+          <div class="wrapper">
+            <div class="main">
+              <div class="hour">
+                <p class="number" id="stopwatch-hour">00</p>
+                <p>HOURS</p>
+              </div>
+              <p class="colon">:</p>
+              <div class="min">
+                <p class="number" id="stopwatch-min">00</p>
+                <p>MINUTES</p>
+              </div>
+              <p class="colon">:</p>
+              <div class="sec">
+                <p class="number" id="stopwatch-sec">00</p>
+                <p>Seconds</p>
+              </div>
+              <p class="colon">:</p>
+              <div class="ms">
+                <p class="number" id="stopwatch-ms">00</p>
+                <p>MILLISECONDS</p>
+              </div>
+            </div>
+          </div>
+          <div class="laps"></div>
+          <div class="btns">
+            <button class="btn start-stopwatch">START</button>
+            <button class="btn lap-stopwatch hidden">LAP</button>
+            <button class="btn pause-stopwatch hidden">PAUSE</button>
+            <button class="btn play-stopwatch hidden">PLAY</button>
+            <button class="btn reset-stopwatch">RESET</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
